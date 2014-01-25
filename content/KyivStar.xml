@@ -20,12 +20,12 @@
 		<supportunicode>1</supportunicode>
 		<supportcheckdelivery>1</supportcheckdelivery>
 		<captcha>1</captcha>
-		<gateurl>http://www.kyivstar.ua/ru/kr/sms/</gateurl>
+		<gateurl>http://www.kyivstar.ua/ru/kh/sms/</gateurl>
 		<supportautorecognize>0</supportautorecognize>
 	</info>
 	<classprops>
 		<encoding>UTF-8</encoding>
-		<pageurl>http://www.kyivstar.ua/ru/kr/sms/</pageurl>
+		<pageurl>http://www.kyivstar.ua/ru/kh/sms/</pageurl>
 		<imageurl>eval(begin
 				HTTP.HTTPMethod('GET','http://smsgate.kyivstar.ua/_sms/ajax/?action=init&amp;callback=jsonCallback&amp;lang=ru&amp;_=' + VarToStr(DateTimeToUnix(Now())));
 				Stored['mid'] := HTML.RegExp('&quot;mid&quot;:&quot;(.*?)&quot;', 1);
